@@ -148,11 +148,11 @@ function exercicio06CalcularContaRestaurante(){
     const nomeCliente = campoNomeCliente.value;
     const valorConsumido = parseFloat(campoValorConsumido.value);
 
-    const campoTipo = document.querySelector("[name='tipo']:checked");
+    const campoTaxa = document.querySelector("[name='taxa']:checked");
 
     let valorTotal = valorConsumido;
     let taxaServico = 0;
-    if (campoTipo !== null) {
+    if (campoTaxa !== null) {
         valorTotal = valorConsumido * 1.15;
         taxaServico = valorConsumido * 0.15;
     }
@@ -164,4 +164,32 @@ function exercicio06CalcularContaRestaurante(){
     Taxa de serviço: ${taxaServico}
     Total a pagar: ${valorTotal}`
 
+}
+
+function exercicio07CadastrarAlunoTurnoCurso(){
+    const campoNomeAluno = document.getElementById("nome-alunoEx7");
+
+    const nomeAluno = campoNomeAluno.value;
+
+    const campoTurno = document.querySelector("[name='tipoEx7']:checked");
+
+    if (campoTurno === null) {
+        alert("Selecione um turno");
+        return;
+    }
+
+    const turno = campoTurno.value;
+
+    const campoSelect = document.getElementById("selectEx7");
+
+    if(campoSelect.value === "selecionar"){
+        alert("Selecione um curso");
+        return;
+    }
+
+    const select = campoSelect.value;
+
+    const resultado = document.getElementById("resultadoEx7");
+
+    resultado.value = `Nome: ${nomeAluno}\nTurno: ${turno}\nCurso: ${select}`
 }

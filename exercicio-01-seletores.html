@@ -4,120 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">Curso JS</p>
+            <h1>Lista de Exercicios</h1>
+        </header>
+
+        <div class="exercises-grid">
+            <div class="exercise-card">
+                <h2>Exercicio01</h2>
+
+                <label for="numero1">Numero 1</label>
+                <input type="number" name="numero1" id="numero1">
+
+                <label for="numero2">Numero 2</label>
+                <input type="number" name="numero2" id="numero2">
+
+                <button onclick="exercicio01CompararDoisNumeros()">Executar</button>
+            </div>
+
+            <div class="exercise-card">
+                <h2>Exercicio02</h2>
+
+                <label for="nomeEx2">Nome</label>
+                <input type="text" id="nomeEx2">
+
+                <label for="IdadeEx2">Idade</label>
+                <input type="number" id="IdadeEx2">
+
+                <button onclick="exercicio02ClassificarIdade()">Executar</button>
+            </div>
+
+            <div class="exercise-card">
+                <h2>Exercicio03</h2>
+
+                <label for="nota1Ex3">Nota 1</label>
+                <input type="number" id="nota1Ex3">
+
+                <label for="nota2Ex3">Nota 2</label>
+                <input type="number" id="nota2Ex3">
+
+                <label for="nota3Ex3">Nota 3</label>
+                <input type="number" id="nota3Ex3">
+
+                <button onclick="exercicio03CalcularMediaEscolar()">Executar</button>
+
+                <label for="resultadoEx3">Resultado</label>
+                <textarea name="textoEx3" id="resultadoEx3" readonly disabled></textarea>
+            </div>
+
+            <div class="exercise-card">
+                <h2>Exercicio04</h2>
+
+                <label for="nome-produtoEx4">Nome do produto</label>
+                <input type="text" id="nome-produtoEx4">
+
+                <label for="preco-produtoEx4">PreÃ§o do produto</label>
+                <input type="number" id="preco-produtoEx4">
+
+                <label for="selectEx4">Selecione o desconto</label>
+                <select name="selectEx4" id="select-Ex4">
+                    <option value="selecionar" selected disabled>Selecione o desconto</option>
+                    <option value="10">10% de desconto</option>
+                    <option value="20">20% de desconto</option>
+                    <option value="30">30% de desconto</option>
+                    <option value="40">40% de desconto</option>
+                    <option value="50">50% de desconto</option>
+                </select>
+
+                <button onclick="exercicio04CalcularDescontoProduto()">Executar</button>
+
+                <label for="resultadoEx4">Resultado</label>
+                <textarea name="textoEx4" id="resultadoEx4" readonly disabled></textarea>
+            </div>
+
+            <div class="exercise-card">
+                <h2>Exercicio05</h2>
+
+                <label for="nome-funcionarioEx5">Nome do funcionario</label>
+                <input type="text" id="nome-funcionarioEx5">
+
+                <label for="salario-atualEx5">Salario atual</label>
+                <input type="number" id="salario-atualEx5">
+
+                <label for="selectEx4">Selecione o cargo</label>
+                <select name="selectEx4" id="select-Ex5">
+                    <option value="selecionar" selected disabled>Selecione o cargo</option>
+                    <option value="Estagiario">Estagiario</option>
+                    <option value="Atendente">Atendente</option>
+                    <option value="Auxiliar-administrativo">Auxiliar administrativo</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Gerente">Gerente</option>
+                </select>
+
+                <button onclick="exercicio05SimularSalario()">Executar</button>
+
+                <label for="resultadoEx5">Resultado</label>
+                <textarea name="textoEx5" id="resultadoEx5" readonly disabled></textarea>
+            </div>
+
+            <div class="exercise-card">
+                <h2>Exercicio06</h2>
+
+                <label for="nome-clienteEx6">Nome do cliente</label>
+                <input type="text" id="nome-clienteEx6">
+
+                <label for="valor-consumidoEx6">Valor consumido</label>
+                <input type="number" id="valor-consumidoEx6">
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="checkboxEx6" name="taxa">
+                    <label for="checkboxEx6">Pagar taxa de serviço?</label>
+                </div>
+
+                <button onclick="exercicio06CalcularContaRestaurante()">Executar</button>
+
+                <label for="resultadoEx6">Resultado</label>
+                <textarea name="textoEx6" id="resultadoEx6" readonly disabled></textarea>
+            </div>
+
+            <div class="exercise-card exercise-card--placeholder">
+                <h2>Exercicio07</h2>
+
+                <label for="nome-alunoEx7">Nome do aluno</label>
+                <input type="text" id="nome-alunoEx7">
+
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="tipo-erp" name="tipoEx7" value="Matutino">
+                        <label for="tipo-erp">Matutino</label>
+                    </div>
     
-    <div>
-        <h1>Exercicio01</h1>
+                    <div class="radio-option">
+                        <input type="radio" id="tipo-hospital" name="tipoEx7" value="Vespertino">
+                        <label for="tipo-hospital">Vespertino</label>
+                    </div>
+    
+                    <div class="radio-option">
+                        <input type="radio" id="tipo-oficina" name="tipoEx7" value="Noturno">
+                        <label for="tipo-oficina">Noturno</label>
+                    </div>
+                </div>
 
-        <label for="numero1">Numero 1</label>
-        <input type="number" name="numero1" id="numero1">
+                <select name="selectEx4" id="selectEx7">
+                    <option value="selecionar" selected disabled>Selecione o curso</option>
+                    <option value="TI">TI</option>
+                    <option value="Super Dev">Super Dev</option>
+                    <option value="Quimica">Quimica</option>
+                </select>
 
-        <label for="numero2">Numero 2</label>
-        <input type="number" name="numero2" id="numero2">
+                <button onclick="exercicio07CadastrarAlunoTurnoCurso()">Executar</button>
 
-        <button onclick="exercicio01CompararDoisNumeros()">Executar</button>
-    </div>
+                <label for="resultadoEx6">Resultado</label>
+                <textarea name="textoEx6" id="resultadoEx7" readonly disabled></textarea>
 
-    <div>
-        <h1>Exercicio02</h1>
+            </div>
 
-        <label for="nomeEx2">Nome</label>
-        <input type="text" id="nomeEx2">
+            <div class="exercise-card exercise-card--placeholder">
+                <h2>Exercicio08</h2>
+                <p>Espaco reservado para o proximo exercicio.</p>
+            </div>
 
-        <label for="IdadeEx2">Idade</label>
-        <input type="number" id="IdadeEx2">
+            <div class="exercise-card exercise-card--placeholder">
+                <h2>Exercicio09</h2>
+                <p>Espaco reservado para o proximo exercicio.</p>
+            </div>
 
-        <button onclick="exercicio02ClassificarIdade()">Executar</button>
-    </div>
-
-    <div>
-        <h1>Exercicio03</h1>
-
-        <label for="nomeEx2">Nota 1</label>
-        <input type="number" id="nota1Ex3">
-
-        <label for="IdadeEx2">Nota 2</label>
-        <input type="number" id="nota2Ex3">
-
-        <label for="IdadeEx2">Nota 3</label>
-        <input type="number" id="nota3Ex3">
-
-        <button onclick="exercicio03CalcularMediaEscolar()">Executar</button>
-
-        <label for="resultadoEx3">Resultado</label>
-        <textarea name="textoEx3" id="resultadoEx3" readonly disabled></textarea>
-    </div>
-
-    <div>
-        <h1>Exercicio04</h1>
-
-        <label for="nomeEx2">Nome do produto</label>
-        <input type="text" id="nome-produtoEx4">
-
-        <label for="IdadeEx2">Preço do produto</label>
-        <input type="number" id="preco-produtoEx4">
-
-        <label for="selectEx4">Selecione o desconto</label>
-        <select name="selectEx4" id="select-Ex4">
-            <option value="selecionar" selected disabled>Selecione o desconto</option>
-            <option value="10">10% de desconto</option>
-            <option value="20">20% de desconto</option>
-            <option value="30">30% de desconto</option>
-            <option value="40">40% de desconto</option>
-            <option value="50">50% de desconto</option>
-        </select>
-
-        <button onclick="exercicio04CalcularDescontoProduto()">Executar</button>
-
-        <label for="resultadoEx4">Resultado</label>
-        <textarea name="textoEx4" id="resultadoEx4" readonly disabled></textarea>
-    </div>
-
-    <div>
-        <h1>Exercicio05</h1>
-
-        <label for="nomeEx2">Nome do funcionario</label>
-        <input type="text" id="nome-funcionarioEx5">
-
-        <label for="IdadeEx2">Salario atual</label>
-        <input type="number" id="salario-atualEx5">
-
-        <label for="selectEx4">Selecione o cargo</label>
-        <select name="selectEx4" id="select-Ex5">
-            <option value="selecionar" selected disabled>Selecione o cargo</option>
-            <option value="Estagiario">Estagiario</option>
-            <option value="Atendente">Atendente</option>
-            <option value="Auxiliar-administrativo">Auxiliar administrativo</option>
-            <option value="Supervisor">Supervisor</option>
-            <option value="Gerente">Gerente</option>
-        </select>
-
-        <button onclick="exercicio05SimularSalario()">Executar</button>
-
-        <label for="resultadoEx5">Resultado</label>
-        <textarea name="textoEx5" id="resultadoEx5" readonly disabled></textarea>
-    </div>
-
-    <div>
-        <h1>Exercicio06</h1>
-
-        <label for="nomeEx2">Nome do cliente</label>
-        <input type="text" id="nome-clienteEx6">
-
-        <label for="IdadeEx2">Valor consumido</label>
-        <input type="number" id="valor-consumidoEx6">
-
-        <input type="checkbox" id="checkboxEx6">
-        <label for="checkboxEx6">Pagar taxa de serviço?</label>
-
-        <button onclick="exercicio06CalcularContaRestaurante()">Executar</button>
-
-        <label for="resultadoEx5">Resultado</label>
-        <textarea name="textoEx6" id="resultadoEx6" readonly disabled></textarea>
-    </div>
-
-
+            <div class="exercise-card exercise-card--placeholder">
+                <h2>Exercicio10</h2>
+                <p>Espaco reservado para o proximo exercicio.</p>
+            </div>
+        </div>
+    </main>
 
     <script src="assets/js/exercicio-01-seletores.js"></script>
 </body>
