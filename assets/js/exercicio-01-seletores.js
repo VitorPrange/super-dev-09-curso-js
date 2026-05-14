@@ -193,3 +193,70 @@ function exercicio07CadastrarAlunoTurnoCurso(){
 
     resultado.value = `Nome: ${nomeAluno}\nTurno: ${turno}\nCurso: ${select}`
 }
+
+function exercicio08SimularLocacaoCarro(){
+    const campoNome = document.getElementById("nome-clienteEx8");
+    const campoSelect = document.getElementById("selectEx8")
+
+    if(campoNome.value === ""){
+        alert("Preencha o nome");
+        return;
+    }
+    if(campoSelect.value === "selecionar"){
+        alert("Selecione um tipo de carro");
+        return;
+    }
+
+    const nome = campoNome.value;
+    const select = campoSelect.value;
+
+    const campoQuantidadeDias = document.getElementById("quantidade-diasEx8");
+
+    if(campoQuantidadeDias.value === "" || parseInt(campoQuantidadeDias.value) < 1){
+        alert("Quantidade de dias invalida");
+        return;
+    }
+    const quantidadeDias = parseInt(campoQuantidadeDias.value);
+
+    const checkSeguro = document.querySelector("[name='tipoEx8']:checked").value;
+    const checkCadeiraInfantil = document.querySelector("[name='tipoEx82']:checked").value;
+
+
+    let diaria = 0;
+    let precoBase = 0;
+    let precoTotal = precoBase;
+
+    if(campoSelect.value === "Onix"){
+        diaria = 100;
+    }else if(campoSelect.value === "Tesla"){
+        diaria = 200;
+    }else if(campoSelect.value === "LandHover"){
+        diaria = 150;
+    }
+
+    precoBase = diaria * quantidadeDias;
+
+    let temSeguro = "Não";
+    let temCadeirinha= "Não";
+
+    if(checkSeguro !== null){
+        precoTotal = precoTotal * 1.15;
+        temSeguro = "Sim";
+    }
+    if(checkCadeiraInfantil !== null){
+        precoTotal = precoTotal * 1.15;
+        temCadeirinha =  "Sim";
+    }
+
+    const resultado = document.getElementById("resultadoEx8");
+
+    
+
+    resultado.value = `Nome: ${nome}
+    Tipo de carro: ${select}
+    Quantidade de dias: ${quantidadeDias}
+    Tem seguro: ${temSeguro}
+    Tem cadeirinha: ${temCadeirinha}
+    Valor total: ${precoTotal}`
+
+}
