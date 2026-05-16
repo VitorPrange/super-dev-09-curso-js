@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../assets/css/exercicio-01-seletores-02.css">
+</head>
+<body>
+    
+    <div class="main">
+        <label for="campo-nomeEx2">Nome</label>
+        <input type="text" id="campo-nomeEx2">
+
+        <select name="selectex2" id="selectEx2">
+            <option value="selected" disabled selected>Selecione o tema do perfil</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+        </select>
+
+        <input type="checkbox" name="destaque" id="check-boxEx2">
+        <label for="check-boxEx2">Modo destaque</label>
+
+        <button onclick="aplicarMudancas()">Aplicar alterações</button>
+
+        <div id="card">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/4e/Superman_-_Lex_2000.jpg/250px-Superman_-_Lex_2000.jpg" alt="bute">
+
+            <p id="nome">Nome</p>
+
+            <span>Consectetur elit voluptates, voluptatum repellendus cumque voluptatibus!</span>
+        </div>
+    </div>
+
+    <script src="../assets/js/exercicio-01-seletores-02.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../assets/css/exercicio-01-seletores-03.css">
+</head>
+<body>
+    
+    <div class="main">
+        <label for="campo-nomeEx3">Nome</label>
+        <input type="text" id="campo-nomeEx3">
+
+        <div>
+            <input type="radio" name="contato" id="contato-pessoal" onchange="apresentarCamposPessoal()">
+            <label for="contato-pessoal">Contato pessoal</label>
+
+            <input type="radio" name="contato" id="contato-comercial" onchange="apresentarCamposComercial()">
+            <label for="contato-comercial">Contato pessoal</label>
+        </div>
+
+        <div class="hidden-pessoal pessoal" id="pessoal">
+            <label for="nome-completo">Nome completo</label>
+            <input type="text" id="nome-completo">
+
+            <label for="data-nascimento">Data de nascimento</label>
+            <input type="date" id="data-nascimento">
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="" id="telefone">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="hidden-comercial comercial" id="comercial">
+            <label for="empresa">Nome da empresa</label>
+            <input type="text" id="empresa">
+        
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj">
+        
+            <label for="cargo">Cargo</label>
+            <input type="text" id="cargo">
+        
+            <label for="telefone-comercial">Telefone comercial</label>
+            <input type="tel" id="telefone-comercial">
+        
+            <label for="email-comercial">E-mail corporativo</label>
+            <input type="email" id="email-comercial">
+        </div>
+
+        <button>Validar cadastro</button>
+    </div>
+
+    <script src="../assets/js/exercicio-01-seletores-03.js"></script>
+
+</body>
+</html>

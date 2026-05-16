@@ -1,0 +1,56 @@
+.caixa{
+    align-items: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    padding: 10px;
+    margin-top: 150px;
+}
+
+#caixa-sub5{
+    display: block;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+} 
+
+.caixa button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.buttonOut{
+    justify-content: center;
+    display: flex;
+}
+
+.buttonFora{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.botao-vermelho{
+    background-color: red;
+}
+
+.botao-verde{
+    background-color: green;
+}
+
+.botao-azul{
+    background-color: blue;
+}
+
+.aumentar-caixa{
+    padding: 20px;
+}
+
+#caixa-sub5:hover{
+    border-color: red;
+    box-shadow: 0 0 2px 2px red;
+}

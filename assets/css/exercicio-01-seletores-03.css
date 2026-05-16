@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.main {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 32px;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #222;
+    background-color: #fafafa;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #666;
+    background-color: #fff;
+}
+
+.main > div:first-of-type {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pessoal,
+.comercial {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #f9f9f9;
+}
+
+button {
+    margin-top: 8px;
+    padding: 12px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.hidden-pessoal, .hidden-comercial{
+    display: none;
+}

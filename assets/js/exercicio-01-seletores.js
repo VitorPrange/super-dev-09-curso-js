@@ -260,3 +260,14 @@ function exercicio08SimularLocacaoCarro(){
     Valor total: ${precoTotal}`
 
 }
+
+/*
+function exercicio10GerarOrcamentoEvento(){
+    const campoNomeResponsavel = document.getElementById("nome-responsavelEx10");
+    const campoQuantidadeConvidados = document.getElementById("quantidade-convidadosEx10");
+    const selectTipoEvento = document.getElementById("selectEx10");
+
+    const campoRadio = document.querySelector("[name='tipoEx10']:checked").value;
+    const campoData = document.getElementById("data-eventoEx10");
+}
+*/

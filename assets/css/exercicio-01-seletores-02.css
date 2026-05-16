@@ -1,0 +1,41 @@
+
+.main{
+    display: flexbox;
+
+}
+
+#card img{
+    justify-self: center;
+    display: block;
+    border-radius: 1000px;
+    height: 150px;
+}
+
+#card{
+    max-width: 150px;
+    margin-top: 150px;
+    justify-self: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.card-vermelho{
+    background-color: red;
+    color: white;
+}
+
+.card-verde{
+    background-color: green;
+    color: white;
+}
+
+.card-azul{
+    background-color: blue;
+    color: white;
+}
+
+.destaque{
+    border-color: red;
+    box-shadow: 0 0 2px 2px red;
+    scale: 1.2;
+}

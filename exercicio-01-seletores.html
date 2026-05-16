@@ -199,7 +199,54 @@
 
             <div class="exercise-card exercise-card--placeholder">
                 <h2>Exercicio10</h2>
-                <p>Espaco reservado para o proximo exercicio.</p>
+                
+                <label for="nome-responsavelEx10">Nome do responsavel</label>
+                <input type="text" id="nome-responsavelEx10">
+
+                <label for="quantidade-convidadosEx10">Quantidade de convidados</label>
+                <input type="number" id="quantidade-convidadosEx10">
+
+                <select name="selectEx10" id="selectEx10">
+                    <option value="selecionar" selected disabled>Selecione o tipo de evento</option>
+                    <option value="evento1">evento1</option>
+                    <option value="evento2">evento2</option>
+                    <option value="evento3">evento3</option>
+                </select>
+
+                <div class="radio-group"></div>
+                    <div class="radio-option">
+                        <input type="radio" id="tipo-pacote1" name="tipoEx10" value="pacote1">
+                        <label for="tipo-pacote1">pacote1</label>
+                    </div>
+    
+                    <div class="radio-option">
+                        <input type="radio" id="tipo-pacote2" name="tipoEx10" value="pacote2">
+                        <label for="tipo-pacote2">pacote2</label>
+                    </div>
+    
+                    <div class="radio-option">
+                        <input type="radio" id="tipo-pacote3" name="tipoEx10" value="pacote3">
+                        <label for="tipo-pacote3">pacote3</label>
+                    </div>
+                </div>
+
+                <label for="data-eventoEx10">Data do evento</label>
+                <input type="date" id="data-eventoEx10">
+
+                <input type="checkbox" id="check-decoracaoEx10" name='tipoEx10'>
+                <label for="check-decoracaoEx10">Decoração</label>
+
+                <input type="checkbox" id="check-fotografiaEx10" name='tipoEx10'>
+                <label for="check-fotografiaEx10">Fotografia</label>
+
+                <input type="checkbox" id="check-musicaEx10" name='tipoEx10'>
+                <label for="check-musicaEx10">Música</label>
+
+                <button onclick="exercicio10GerarOrcamentoEvento()">Executar</button>
+
+                <label for="resultadoEx10">Resultado</label>
+                <textarea name="textoEx10" id="resultadoEx10" readonly disabled></textarea>
+
             </div>
         </div>
     </main>
