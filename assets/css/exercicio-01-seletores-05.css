@@ -1,0 +1,49 @@
+.imagem{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 800px;
+}
+
+.imagem img{
+    display: block;
+    border: 2px solid #000000;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.body{
+    display: flex;
+}
+
+.botao-limpar{
+    align-self: center;
+    justify-self: center;
+}
+
+*{
+    gap: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#textarea{
+    width: 500px;
+    height: 230px;
+    resize: none;
+}
+
+#legenda{
+    width: 500px;
+    height: 300px;
+    resize: none;
+    color: #222222;
+    background-color: #f5f5f5;
+    border: 3px solid #444444;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    font-size: 18px;
+    line-height: 1.5;
+}

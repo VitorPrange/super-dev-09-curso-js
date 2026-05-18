@@ -1,0 +1,50 @@
+.imagem{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.imagem img{
+    border: 2px solid #000000;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.body{
+    display: flex;
+}
+
+.botao-limpar{
+    align-self: center;
+    justify-self: center;
+}
+
+.pesquisa{
+    align-self: flex-start;
+    justify-self: end;
+}
+
+*{
+    gap: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.imagem textarea{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.imagem2{
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
