@@ -35,14 +35,27 @@ O Quico apareceu completamente indignado, fazendo escandalo e reclamando como se
 Resumo da cena: drama, gritaria e energia de confusao total.`;
 }
 
+let estado = "continue";
+
 function alterarImagem() {
     const imagem = document.getElementsByClassName("imagem2")[0];
+
+    if (estado === "parado") {
+        return;
+    }
 
     if (imagem.src.includes("chavo.png")) {
         aplicarEstadoQuico();
     } else {
         aplicarEstadoChaves();
     }
+
+    setTimeout(alterarImagem, 1000);
+}
+
+function parar() {
+    estado = "parado";
+    aplicarEstadoChaves();
 }
 
 aplicarEstadoChaves();
