@@ -61,7 +61,7 @@ input[type="date"]:focus {
     padding: 10px 0;
 }
 
-.pessoal,
+
 .comercial {
     display: flex;
     flex-direction: column;
@@ -69,7 +69,17 @@ input[type="date"]:focus {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 16px;
-    background-color: #f9f9f9;
+    background-color: #d1f8e9;
+}
+
+.pessoal{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #f3d7f8;
 }
 
 button {
@@ -91,4 +101,13 @@ button:hover {
 
 .hidden-pessoal, .hidden-comercial{
     display: none;
+}
+
+#resumoDiv label{
+    display: block;
+}
+
+#resumoDiv textarea{
+    width: 414px;
+    height: 100px;
 }

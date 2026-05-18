@@ -13,11 +13,11 @@
         <input type="text" id="campo-nomeEx3">
 
         <div>
-            <input type="radio" name="contato" id="contato-pessoal" onchange="apresentarCamposPessoal()">
+            <input type="radio" name="contato" id="contato-pessoal" onchange="apresentarCamposPessoal()" value="pessoal">
             <label for="contato-pessoal">Contato pessoal</label>
 
-            <input type="radio" name="contato" id="contato-comercial" onchange="apresentarCamposComercial()">
-            <label for="contato-comercial">Contato pessoal</label>
+            <input type="radio" name="contato" id="contato-comercial" onchange="apresentarCamposComercial()" value="comercial">
+            <label for="contato-comercial">Contato comercial</label>
         </div>
 
         <div class="hidden-pessoal pessoal" id="pessoal">
@@ -54,7 +54,12 @@
             <input type="email" id="email-comercial">
         </div>
 
-        <button>Validar cadastro</button>
+        <button onclick="validacao()">Validar cadastro</button>
+
+        <div id="resumoDiv">
+            <label for="resumo">Resumo:</label>
+            <textarea name="textArea" id="resumo"></textarea>
+        </div>
     </div>
 
     <script src="../assets/js/exercicio-01-seletores-03.js"></script>
