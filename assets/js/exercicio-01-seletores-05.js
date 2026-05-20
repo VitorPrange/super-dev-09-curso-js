@@ -36,11 +36,13 @@ Resumo da cena: drama, gritaria e energia de confusao total.`;
 }
 
 let estado = "continue";
+let rodando = false;
 
 function alterarImagem() {
     const imagem = document.getElementsByClassName("imagem2")[0];
 
     if (estado === "parado") {
+        rodando = false;
         return;
     }
 
@@ -53,8 +55,19 @@ function alterarImagem() {
     setTimeout(alterarImagem, 1000);
 }
 
+function iniciar(){
+    if(rodando === true){
+        return;
+    }
+
+    estado = "continue";
+    rodando = true;
+    alterarImagem();
+}
+
 function parar() {
     estado = "parado";
+    rodando = false;
     aplicarEstadoChaves();
 }
 
