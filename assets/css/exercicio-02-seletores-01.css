@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+/* Container principal */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Formulário */
+.main > div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Título */
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+/* Card de prato */
+.card-prato {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 8px solid #ccc;
+}
+
+/* Nome do prato */
+.card-prato h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Preço em destaque */
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009933;
+    margin-top: 10px;
+}
+
+/* Categorias */
+
+/* Lanche */
+.lanche {
+    border-left-color: #ff9900;
+    background-color: #fff8e6;
+}
+
+/* Bebida */
+.bebida {
+    border-left-color: #3399ff;
+    background-color: #eaf5ff;
+}
+
+/* Sobremesa */
+.sobremesa {
+    border-left-color: #ff66b3;
+    background-color: #fff0f7;
+}
