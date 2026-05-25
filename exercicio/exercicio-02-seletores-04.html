@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria don chavo</title>
+    <link rel="stylesheet" href="../assets/css/exercicio-02-seletores-04.css">
+</head>
+<body>
+    <div class="main">
+        <div class="cabecalho">
+            <span class="cabecalho-etiqueta">Pizzaria Don Chavo</span>
+            <h1>Comanda de pedidos</h1>
+            <p>Preencha o pedido e acompanhe a lista abaixo.</p>
+        </div>
+
+        <div class="formulario-pedido">
+            <div class="campo-formulario">
+                <label for="nome-cliente">Nome do cliente</label>
+                <input type="text" id="nome-cliente" placeholder="Digite o nome">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="select-pizza">Sabor da pizza</label>
+                <select name="select" id="select-pizza">
+                    <option value="selected" selected disabled>Selecione o sabor da pizza</option>
+                    <option value="frango-catupiri">Frango catupiri</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="bacon-and-fries">Bacon and fries</option>
+                    <option value="5-queijos">5 queijos</option>
+                    <option value="banana-chocolate-preto">Banana com chocolate preto</option>
+                    <option value="banana-chocolate-branco">Banana com chocolate branco</option>
+                    <option value="sonho-valsa">Sonho de valsa</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="campo-quantidade">Quantidade</label>
+                <input type="number" id="campo-quantidade" placeholder="0">
+            </div>
+
+            <div class="acoes-formulario">
+                <button class="botao botao-principal" onclick="adicionarPedido()">Adicionar pedido</button>
+            </div>
+        </div>
+
+        <div class="secao-pedidos">
+            <h2>Pedidos cadastrados</h2>
+            <div id="pedidos"></div>
+        </div>
+    </div>
+
+    <script src="../assets/js/exercicio-02-seletores-04.js"></script>
+</body>
+</html>
