@@ -95,7 +95,7 @@ function consultarEmpresaPorId(){
 }
 
 function editarEmpresa(){
-    const idParaEditar = parseInt(prompt("Digite o id para consultar"));
+    const idParaEditar = parseInt(prompt("Digite o id para editar"));
     const novoNome = prompt("Digite o novo nome");
     const novoCNPJ = prompt("Digite o novo CNPJ");
 
