@@ -118,13 +118,7 @@ function apagarProduto(){
     fetch(url, {
         method: "DELETE"
     })
-    .then(response => {
-        if(response.ok === false){
-            throw new Error("Erro na requisição: " + response.status);
-        }
-
-        return response.text();
-    })
+    .then(response => response)
     .then(dados => {
         alert("Produto apagado")
         listarProdutos();

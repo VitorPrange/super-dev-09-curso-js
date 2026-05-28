@@ -43,7 +43,6 @@ function listarAtendimentos(){
     .then(dados => {
         for(let i = 0; i < dados.length; i++){
             const dado = dados[i];
-            debugger
 
             const texto = `ID: ${dado.id} | Nome do cliente: ${dado.cliente} | Tipo de atendimento: ${dado.tipoAtendimento} | Descrição: ${dado.descricao} | Nome do atendente: ${dado.atendente} | Duração em Minutos: ${dado.duracaoMinutos}\n`
 
