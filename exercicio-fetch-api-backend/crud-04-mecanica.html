@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="../assets/css/exercicio-04-fetch-backend.css">
+</head>
+<body>
+
+    <div>
+        <h1>Mecanica agendamento</h1>
+
+        <div>
+            <button onclick="cadastrarCliente()">Cadastrar cliente</button>
+        </div>
+
+        <div>
+            <button onclick="listarClientes()">Listar clientes</button>
+        </div>
+
+        <div>
+            <button onclick="cadastrarAgendamento()">Cadastrar Agendamento</button>
+        </div>
+
+        <div>
+            <button onclick="listarAgendamentos()">Listar agendamentos</button>
+        </div>
+
+        <div class="ta">
+            <textarea name="agendamentos" id="agendamentos"></textarea>
+        </div>
+
+        <select name="select" id="clientes" class="hidden">
+
+            <option value="selected" selected disabled>Selecione um cliente</option>
+        </select>
+    </div>
+
+    <script src="../assets/js/exercicio-04-fetch-backend.js"></script>
+</body>
+</html>

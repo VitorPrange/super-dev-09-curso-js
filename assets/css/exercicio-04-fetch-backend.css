@@ -1,0 +1,15 @@
+body div{
+    display: inline;
+}
+
+.ta{
+    display: block;
+}
+button{
+    margin: 10px;
+}
+
+textarea{
+    width: 500px;
+    height: 500px;
+}
