@@ -3,7 +3,8 @@ body div{
 }
 
 .ta{
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 button{
     margin: 10px;
@@ -12,4 +13,8 @@ button{
 textarea{
     width: 500px;
     height: 500px;
+}
+
+select{
+    display: block;
 }
