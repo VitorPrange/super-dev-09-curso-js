@@ -32,7 +32,7 @@ function listarClientes(){
     const url = "https://api.franciscosensaulas.com/api/v1/mecanica/clientes"
 
     const select = document.getElementById("clientes");
-    const textarea = document.getElementById("clientesTexto");
+    const textarea = document.getElementById("clientes-texto");
 
     select.innerHTML = "";
     textarea.value = "";
@@ -50,9 +50,6 @@ function listarClientes(){
     fetch(url)
     .then(response => response.json())
     .then(dados => {
-
-        
-        
         for(let i = 0; i < dados.length; i++){
             const dado = dados[i];
 
@@ -63,7 +60,11 @@ function listarClientes(){
 
             select.appendChild(criarOption);
 
-            const texto = `ID: ${dado.id} | Nome do cliente: ${dado.nome} | Telefone: ${dado.telefone}\n`
+            const texto = `
+********************************
+ID: ${dado.id}
+Nome do cliente: ${dado.nome}
+Telefone: ${dado.telefone}`
 
             textarea.value = textarea.value + texto;
         }
@@ -79,7 +80,7 @@ function consultarClientePorId(){
     const idConsulta = parseInt(prompt("Digite o ID do cliente para consulta"));
     const url = "https://api.franciscosensaulas.com/api/v1/mecanica/clientes/" + idConsulta;
 
-    const textarea = document.getElementById("clientesTexto");
+    const textarea = document.getElementById("clientes-texto");
 
     fetch(url)
     .then(response => response.json())
@@ -144,6 +145,11 @@ function apagarCliente(){
 function cadastrarAgendamento(){
     const select = document.getElementById("clientes");
 
+    if(select.value === "selected"){
+        alert("Selecione um cliente");
+        return;
+    }
+
     const url = "https://api.franciscosensaulas.com/api/v1/mecanica/agendamentos"
 
     const dataAgendamento = new Date().toISOString();
@@ -187,7 +193,15 @@ function listarAgendamentos(){
     .then(dados => {
         for(let i = 0; i < dados.length; i++){
             const dado = dados[i];
-            const texto = `ID: ${dado.id} | Data de agendamento: ${dado.dataAgendamento} | Descrição: ${dado.descricao} | Cliente: ${dado.cliente.nome} | Id do cliente: ${dado.cliente.id}\n`
+            const texto = 
+`ID: ${dado.id}
+Data de agendamento: ${dado.dataAgendamento}
+Descrição: ${dado.descricao}
+Cliente:
+    Nome: ${dado.cliente.nome}
+    Id do cliente: ${dado.cliente.id}
+    Telefone do cliente: ${dado.cliente.telefone}
+***********************************`
 
             textarea.value = textarea.value + texto;
         }
