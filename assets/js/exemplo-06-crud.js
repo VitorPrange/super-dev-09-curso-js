@@ -43,7 +43,7 @@ function salvarCategoria(evento) {
         cadastrarCategoria(nome);
     } else {
         // Chama a função para editar a categoria existente.
-        editarCategoria(nome);
+        editarCliente(nome);
     }
 }
 
@@ -112,7 +112,7 @@ function cadastrarCategoria(nomeCategoria) {
 }
 
 // Cria a função responsável por editar uma categoria.
-function editarCategoria(nomeParaEditar) {
+function editarCliente(nomeParaEditar) {
     // Monta a URL usando a URL base e o id da categoria que será editada.
     const url = `${urlBase}/${idParaEditar}`;
 
@@ -231,7 +231,7 @@ function adicionarCliqueBotoesLinhas() {
         const botaoApagar = botoesApagar[i];
 
         // Adiciona o evento de clique no botão de apagar.
-        botaoApagar.addEventListener("click", apagarCategoria);
+        botaoApagar.addEventListener("click", apagarCliente);
     }
 
     // Pega todos os botões de editar existentes na tabela.
@@ -248,7 +248,7 @@ function adicionarCliqueBotoesLinhas() {
 }
 
 // Cria a função responsável por apagar uma categoria.
-function apagarCategoria(evento) {
+function apagarCliente(evento) {
     // Pega o elemento que recebeu o clique.
     const botaoApagar = evento.target;
 

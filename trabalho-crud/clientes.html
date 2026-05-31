@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body>
+    <div class="clientes">
+        <div class="clientes__header">
+            <div>
+                <h1 class="clientes__title">Clientes</h1>
+                <p class="clientes__subtitle">Cadastre e acompanhe os clientes da mecanica.</p>
+            </div>
+
+            <button id="botao-voltar">Voltar</button>
+        </div>
+
+        <div class="form-card">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome do cliente">
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone do cliente">
+            </div>
+
+            <button id="botao-cadastrar">Cadastrar cliente</button>
+        </div>
+
+        <table id="tabela-clientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Acoes</th>
+                </tr>
+            </thead>
+
+            <tbody id="clientes">
+                <tr>
+                    <td>1</td>
+                    <td>Alimentacao</td>
+                    <td>(00) 00000-0000</td>
+                    <td>
+                        <button class="botao-editar">Editar</button>
+                        <button class="botao-apagar">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/clientes.js"></script>
+</body>
+</html>
